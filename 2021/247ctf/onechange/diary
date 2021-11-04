@@ -1,0 +1,31 @@
+strlen = 0x555555602030
+fini_off = 0x201DF0
+fini = 0x555555601df0   -> 0x555555400970
+tmp = 0x5555556020c0
+putchar = 0x555555602018
+
+
+
+start = 0x555555 40 00 40
+fini =  0x555555601df0
+tmp = 0x5555556020c0
+
+
+0x555555400bb0
+0x555555400000
+0x555555601df0
+
+__libc_start_main
+__GI_exit
+__run_exit_handlers   +245
+
+
+0x7ffff7fe0ef0:	mov    r15,QWORD PTR [r13+0x0]   // r13 -> 0x7fffffffdcf0 (stack)
+0x7ffff7fe0f36:	mov    rsi,QWORD PTR [r15]   // r15: mmap
+0x7ffff7fe0f3d:	add    rsi,r14               // rsi -> code_base, r14 -> .fini_off
+0x7ffff7fe0f4b:	lea    r14,[rsi+rax*8]       // rsi -> .fini_addr
+0x7ffff7fe0f58:	call   QWORD PTR [r14]       // r14 -> .fini addr
+
+
+stack: 
+0x7fffffffde60 --> 0x7ffff7ffe190 --> 0x555555400000 --> 0x10102464c457f

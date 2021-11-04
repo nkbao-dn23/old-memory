@@ -1,0 +1,17 @@
+rbp-0x60: 0x7fffffffdd50
+
+gdb-peda$ checksec
+CANARY    : ENABLED
+FORTIFY   : disabled
+NX        : ENABLED
+PIE       : ENABLED
+RELRO     : FULL
+gdb-peda$ 
+
+
+set *0x5555555592d0 = 0x5555555592b0
+set *0x5555555592d4 = 0x5555
+set *0x5555555592d8 = 0x5555555592b0
+set *0x5555555592dc = 0x5555
+set *0x5555555592b0 = 0x7ffff7fa0b70
+set *0x5555555592b4 = 0x7fff

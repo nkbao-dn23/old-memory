@@ -1,0 +1,26 @@
+Dump of assembler code for function vector_delete:
+   0x00000000000013b5 <+0>:   endbr64 
+   0x00000000000013b9 <+4>:   push   rbp
+   0x00000000000013ba <+5>:   mov    rbp,rsp
+   0x00000000000013bd <+8>:   sub    rsp,0x20
+   0x00000000000013c1 <+12>:  mov    QWORD PTR [rbp-0x18],rdi
+   0x00000000000013c5 <+16>:  mov    DWORD PTR [rbp-0x4],0x0
+   0x00000000000013cc <+23>:  jmp    0x13e9 <vector_delete+52>
+   0x00000000000013ce <+25>:  mov    rax,QWORD PTR [rbp-0x18]
+   0x00000000000013d2 <+29>:  mov    edx,DWORD PTR [rbp-0x4]
+   0x00000000000013d5 <+32>:  movsxd rdx,edx
+   0x00000000000013d8 <+35>:  mov    rax,QWORD PTR [rax+rdx*8+0x8]
+   0x00000000000013dd <+40>:  mov    rdi,rax
+   0x00000000000013e0 <+43>:  call   0x10d0 <free@plt>
+   0x00000000000013e5 <+48>:  add    DWORD PTR [rbp-0x4],0x1
+   0x00000000000013e9 <+52>:  mov    rax,QWORD PTR [rbp-0x18]
+   0x00000000000013ed <+56>:  mov    eax,DWORD PTR [rax]
+   0x00000000000013ef <+58>:  cmp    DWORD PTR [rbp-0x4],eax
+   0x00000000000013f2 <+61>:  jl     0x13ce <vector_delete+25>
+   0x00000000000013f4 <+63>:  mov    rax,QWORD PTR [rbp-0x18]
+   0x00000000000013f8 <+67>:  mov    rdi,rax
+   0x00000000000013fb <+70>:  call   0x10d0 <free@plt>
+   0x0000000000001400 <+75>:  nop
+   0x0000000000001401 <+76>:  leave  
+   0x0000000000001402 <+77>:  ret    
+End of assembler dump.

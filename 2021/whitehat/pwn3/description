@@ -1,0 +1,9 @@
+FormatString???
+
+Using netcat:
+nc 103.229.41.18 5558
+
+Download file here:
+https://drive.google.com/file/d/1CVz6_nkJe-EXUMZxwx-xsBvonBKE-8hz/view?usp=sharing
+
+You should submit WhiteHat{sha1(flag)}

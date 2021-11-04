@@ -1,0 +1,22 @@
+gdb-peda$ stack 20
+0000| 0x7fffffffdd30 --> 0x0 
+0008| 0x7fffffffdd38 --> 0x4011d3 (<read_long+42>:	leave)
+0016| 0x7fffffffdd40 ('b' <repeats 18 times>, "\n")
+0024| 0x7fffffffdd48 ("bbbbbbbbbb\n")
+0032| 0x7fffffffdd50 --> 0xa6262 ('bb\n')
+0040| 0x7fffffffdd58 --> 0x7fffffffde80 --> 0x1 
+0048| 0x7fffffffdd60 --> 0x7fffffffdd90 --> 0x0 
+0056| 0x7fffffffdd68 --> 0x40123e (<main+105>:	add    rbp,rax)
+0064| 0x7fffffffdd70 ('a' <repeats 23 times>, "\n")
+0072| 0x7fffffffdd78 ('a' <repeats 15 times>, "\n")
+0080| 0x7fffffffdd80 ("aaaaaaa\n")
+0088| 0x7fffffffdd88 --> 0x0 
+0096| 0x7fffffffdd90 --> 0x0 
+0104| 0x7fffffffdd98 --> 0x7ffff7ddb0b3 (<__libc_start_main+243>:	mov    edi,eax)
+0112| 0x7fffffffdda0 --> 0x7ffff7ffc620 --> 0x50b1600000000 
+0120| 0x7fffffffdda8 --> 0x7fffffffde88 --> 0x7fffffffe1fb ("/home/letscode/Desktop/DownUnderCTF/readybouncepwn/rbp")
+0128| 0x7fffffffddb0 --> 0x100000000 
+0136| 0x7fffffffddb8 --> 0x4011d5 (<main>:	push   rbp)
+0144| 0x7fffffffddc0 --> 0x401250 (<__libc_csu_init>:	endbr64)
+0152| 0x7fffffffddc8 --> 0x4e6408547cc19c65 
+

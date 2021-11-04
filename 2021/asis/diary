@@ -1,0 +1,62 @@
+justpwnit
+- ki thuat: stack pivoting 
+rsp (stack -> heap)
+- stack underflow
+- leave-ret 2 lan
+- mov qword ptr [reg], reg [to write "/bin/sh\0"] in a writable area
+
+
+
+abbr
+- control rip
+- static -> thuc thi ropchain (execve("/bin/sh", 0, 0))
+- control rsp 
+
+cach 1:
+	- khong control duoc rsp
+	- *format string -> tao cai rop chain trong stack
+	- Note: ne' stack entry chua chuoi dia chi
+	- always work in stack: 0048| 0x7fffffffdda0 --> 0x7fffffffdeb8 --> 0x7fffffffe22e ("/home/letscode/Desktop/asis/abbr/chall")
+
+	payload += f"%{0x100 - s1 + r2}x" + "%12$hhn" + f"%{0x100 - r2 + s2}x" + '%47$hhn'
+
+cach 2:
+	- 0x405121 <_nl_load_domain+737>:	xchg   esp,eax ; ret
+	- mov rsp, rax
+	  mov rsp, rdi 
+	  mov rsp, r8
+
+
+
+
+StrVec
+- integer overflow
+- heap overflow
+- read heap_addr -> libc_addr
+*Note: free 1 chunk size>0x410, sau do, neu tao 1 chunk voi size nho hon thi no se chia big_chunk nay ra de cap phat 
+
+
+- control rip
+2 huong lam:
+
+1/ overwrite free_hook
+description:
+	+ can NOT free 2 time contigious
+	+ free -> create  -> 1-1 -> control heap290 -> control free_chunk_count <- free heap290 (8th)
+	+ free heap290 (8th) -> leak libc_addr
+	+ self-loop -> "1-n" -> "double malloc": return the same address when malloc 2 times
+	+ using "1-n" control return_value of malloc 
+	+ free_chunk_count=[0,1]
+
+
+2/ overwrite return address of main in stack
+	+ leak stack addr ("environ" in glibc)
+	+ leak canary khi da co stack addr
+
+	+ (hen xui: cung may size 0x20 vua du de overwrite den return addr cua main) tao 1 fake chunk tren stack, roi free chinh no de lan tiep theo malloc -> return chunk do -> overwrite (canary + return address)
+	
+	+ free(chunk with size<0x410) 2 things needed to be setup
+		+ prev_size = 0x0
+		+ size | 0x1
+
+	+++ free cai chunk tren malloc_hook	 

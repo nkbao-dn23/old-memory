@@ -1,0 +1,48 @@
+nc 125.235.240.166 33333
+
+
+Name     %s
+Health   %lld  +16
+Strength %u    +24 
+Defend   %u    +28
+Skill    %s    +32
+
+
+global_1   
+global_2   Health - 0x60000000
+global_3   Strength - 0x9c40
+global_4   
+global_5   
+
+
+=========INFO BOSS=========
+
+Name: Akaza
+Health: 1610612736
+Strength: 40000
+Defend: 20000   - 0x4e20
+Skill: Wakaisatsu
+
+=========INFO OUR=========
+
+Health: 2147483646
+Strength: 0x2000
+Defend: 0x1000
+
+
+----------------------------------
+
+Defend+0: boss defend  - 40.000
+Defend+4: our defend   - 20.000
+
+
+boss_pointer = 0x602108
+global_1 = 0x602108
+global_2 = 0x602110
+global_3 = 0x602118
+global_4 = 0x602120
+global_5 = 0x602128
+
+
+0x11111111 = 286331153
+

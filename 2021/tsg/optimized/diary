@@ -1,0 +1,44 @@
+break* 0x400928
+
+=> 0x400b9c:	call   0x400b15
+
+=> 0x400b6b:	push   rax
+
+
+[-------------------------------------code-------------------------------------]
+   0x800c48:	mov    rdi,r9
+   0x800c4b:	push   0x59
+   0x800c4d:	pop    rax
+=> 0x800c4e:	syscall 
+   0x800c50:	test   eax,eax
+   0x800c52:	js     0x800c58
+   0x800c54:	mov    BYTE PTR [rsi+rax*1],0x0
+   0x800c58:	add    r9,0xf
+Guessed arguments:
+arg[0]: 0x800ba5 ("/proc/self/exe")
+arg[1]: 0x7fffffffd1ec --> 0x0 
+arg[2]: 0x1000 
+[------------------------------------stack-------------------------------------]
+
+
+
+
+=> 0x400b7f:	ret  
+
+=> 0x800bfe:	pop    r9
+
+=> 0x800c87:	push   rax
+
+=> 0x40083e:	push   rsp
+
+
+=> 0x400854:	call   QWORD PTR [rip+0x20379e]        # 0x603ff8
+
+0x7ffff7b04fd0
+
+//0x400920
+
+//0x40092f
+
+=> 0x40095b:	call   0x4007e0
+   0x400be4:	call   0x4007f0

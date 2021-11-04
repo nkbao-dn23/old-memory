@@ -1,0 +1,4 @@
+[x] Opening connection to pwn-2021.duc.tf on port 31910
+[x] Opening connection to pwn-2021.duc.tf on port 31910: Trying 34.87.231.237
+[+] Opening connection to pwn-2021.duc.tf on port 31910: Done
+[*] Closed connection to pwn-2021.duc.tf port 31910

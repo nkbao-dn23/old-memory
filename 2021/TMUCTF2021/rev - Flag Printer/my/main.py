@@ -1,0 +1,18 @@
+def loop(a1):
+	if(a1 == 0): return 0
+	if(a1 == 1): return 10
+	v3 = 0
+	for i in range(1, a1):
+		v3 = (a1 + (v3 ^ i))% 10
+	v2 = v3*loop(a1-1)
+	return (a1 + v2 + v3*loop(a1-2))%1000000
+
+note = [0x0000002e	,0x00000022	,0x00000983	,0x000bce11,0x000b6612	,0x0009fd20	,0x0000007f	,0x0007dc23,0x00031372	,0x00000045	,0x000a15e5	,0x00013985,0x0009431a	,0x000000b2	,0x000000a6	,0x000d929b,0x0008e5c9	,0x0004b1ba	,0x000de169	,0x00019268,0x000bcf55	,0x0006c58f	,0x00030131	,0x0006ec86,0x000639e5	,0x000c306f	,0x000002c0	,0x000002f3,0x00078b1d	,0x0002433f	,0x000d2034	,0x000003e8,0x000315e1	,0x000c2163	,0x000004f5	,0x0001ec35,0x00003736	,0x00000525	]
+
+flag = ""
+
+for i in range(len(note)):
+	tmp = (loop(i*i) ^ note[i]) - i + 38
+	flag += chr(tmp)
+	print(flag)
+

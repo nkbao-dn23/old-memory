@@ -1,0 +1,40 @@
+1/ fastbin_double_free
+
+- malloc 7times (small size)
+- malloc q, r (same small size)
+- free 7times
+- free(q) - free(r) - free(q) (unsorted bin)
+- malloc 7times (clear heap290)
+- malloc to edit chunk.next=arbitrary_address, malloc 2times more
+- malloc(4th) - arbitrary address write
+
+
+
+2/ house_of_botcake
+
+- malloc(0x100) 7times
+- malloc(0x100): q, r
+- malloc(!0x100) - prevent consolidate with top chunk
+- free 7 first chunks to fill tcache
+- free(r)
+- free(q) - q, r bị gộp lại và được lưu ở unsorted bin 
+- malloc(0x100) to take 1 chunk from tache out
+- free(r) - saved into tache as 7th_chunk (double free here)
+- malloc(big0x100 && small0x200) return q - chunk stored in unsorted bin - overwrite r.nextchunk with arbitrary address
+- malloc(0x100) - return r
+- malloc(0x100) - return arbitrary address 
+
+
+3/ tcache_double_free
+
+- p = malloc(0x10)
+- free(p)
+- set p.bk = 0x1337 (change from heap290)
+- free(p) // double free, no error here. tcache: p - p && count = 2
+- set p.bk = 0x1337 (change from heap290)
+- free(p) // double free, no error here. tcache: p - p - p && count = 3
+- malloc(0x10) to change p.next = arbitrary_address
+- malloc(0x10) - not important here
+- malloc(0x10) - arbitrary address write
+
+

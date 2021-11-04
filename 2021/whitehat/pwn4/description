@@ -1,0 +1,9 @@
+Using netcat:
+nc 103.229.41.18 5556
+
+Flag in /home/loop
+
+Download file here:
+https://drive.google.com/file/d/1qvn-ftubQZLP7F6TmQqK2-1OSiStgE6L/view?usp=sharing
+
+You should submit WhiteHat{sha1(flag)}

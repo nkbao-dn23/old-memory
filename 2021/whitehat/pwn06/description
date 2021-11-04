@@ -1,0 +1,7 @@
+Using netcat:
+nc 103.229.41.18 8083
+
+Download file here:
+https://drive.google.com/file/d/1Qe-1UFiL8yrm9gjcskA4-paBpDL69io2/view?usp=sharing
+
+You should submit WhiteHat{sha1(flag)}

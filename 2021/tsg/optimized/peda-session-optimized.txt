@@ -1,0 +1,8 @@
+break * 0x400b7f
+break * 0x800bfe
+break * 0x800c87
+break * 0x40083e
+break * 0x400854
+break * 0x7ffff7b04fd0
+break * 0x400be4
+

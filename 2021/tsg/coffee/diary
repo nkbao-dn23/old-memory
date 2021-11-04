@@ -1,0 +1,13 @@
+
+printf = 0x64e10
+system = 0x55410
+
+base = 0x00007ffff7dbb000
+
+lib_st= 0x26fc0
+
+
+onegg = 0xe6c81
+
+puts = 0x0075a0
+pops = 0x11c2b0
