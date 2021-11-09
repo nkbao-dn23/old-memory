@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Nov  7 09:55:15 2021
+Invocation: foremost UsrClass.dat 
+Output directory: /home/letscode/Desktop/damctf/misc3/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: UsrClass.dat
+Start: Sun Nov  7 09:55:15 2021
+Length: 512 KB (524288 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sun Nov  7 09:55:15 2021
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Sun Nov  7 09:55:15 2021
