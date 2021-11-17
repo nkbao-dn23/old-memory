@@ -1,0 +1,9 @@
+Easy kernel is still kernel right? (480pts) - 16 solves
+by Seal
+Description
+If you have never done kernel pwn before, check out this: https://lkmidas.github.io/posts/20210123-linux-kernel-pwn-part-1/
+
+nc ctf.k3rn3l4rmy.com 1003
+
+Attachments
+https://ctf.k3rn3l4rmy.com/kernelctf-distribution-challs/easy_kernel/easy_kernel.tar.gz
