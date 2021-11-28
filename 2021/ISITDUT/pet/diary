@@ -1,0 +1,107 @@
+
+0000| 0x7ffc1a410b60 --> 0x7ffc1a410b88 --> 0x0 
+0008| 0x7ffc1a410b68 --> 0x7ffc1a410c90 --> 0x68736966 ('fish')
+0016| 0x7ffc1a410b70 --> 0x7ffc1a410e30 --> 0x0 
+0024| 0x7ffc1a410b78 --> 0x55e537a223db (mov    rax,QWORD PTR [rbp-0x2a8])
+0032| 0x7ffc1a410b80 --> 0x7f224ab44b00 --> 0x2d7f0   -----> 10
+0040| 0x7ffc1a410b88 --> 0x0 
+0048| 0x7ffc1a410b90 --> 0x0 
+0056| 0x7ffc1a410b98 --> 0x0 
+0064| 0x7ffc1a410ba0 --> 0x0 
+0072| 0x7ffc1a410ba8 --> 0x0 
+0080| 0x7ffc1a410bb0 --> 0x0 
+0088| 0x7ffc1a410bb8 --> 0x0 
+0096| 0x7ffc1a410bc0 --> 0x0 
+0104| 0x7ffc1a410bc8 --> 0x0 
+0112| 0x7ffc1a410bd0 --> 0x0 
+0120| 0x7ffc1a410bd8 --> 0x0 
+0128| 0x7ffc1a410be0 --> 0x0 
+0136| 0x7ffc1a410be8 --> 0x0 
+0144| 0x7ffc1a410bf0 --> 0x0 
+0152| 0x7ffc1a410bf8 --> 0x0 
+0160| 0x7ffc1a410c00 --> 0x0 
+0168| 0x7ffc1a410c08 --> 0x0 
+0176| 0x7ffc1a410c10 --> 0x0 
+0184| 0x7ffc1a410c18 --> 0x0 
+0192| 0x7ffc1a410c20 --> 0x0 
+--More--(25/100)
+0200| 0x7ffc1a410c28 --> 0x0 
+0208| 0x7ffc1a410c30 --> 0x0 
+0216| 0x7ffc1a410c38 --> 0x0 
+0224| 0x7ffc1a410c40 --> 0x0 
+0232| 0x7ffc1a410c48 --> 0x0 
+0240| 0x7ffc1a410c50 --> 0x0 
+0248| 0x7ffc1a410c58 --> 0x0 
+0256| 0x7ffc1a410c60 --> 0x0 
+0264| 0x7ffc1a410c68 --> 0x0 
+0272| 0x7ffc1a410c70 --> 0x0 
+0280| 0x7ffc1a410c78 --> 0x0 
+0288| 0x7ffc1a410c80 --> 0x0 
+0296| 0x7ffc1a410c88 --> 0x0 
+0304| 0x7ffc1a410c90 --> 0x68736966 ('fish')
+0312| 0x7ffc1a410c98 --> 0x0                        45
+0320| 0x7ffc1a410ca0 --> 0x2533323100000000 ('')
+0328| 0x7ffc1a410ca8 ("hhn%p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p"...)
+0336| 0x7ffc1a410cb0 ("%p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0344| 0x7ffc1a410cb8 ("- %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0352| 0x7ffc1a410cc0 ("p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0360| 0x7ffc1a410cc8 (" %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0368| 0x7ffc1a410cd0 (" - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0376| 0x7ffc1a410cd8 ("%p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0384| 0x7ffc1a410ce0 ("- %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0392| 0x7ffc1a410ce8 ("p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+--More--(50/100)
+0400| 0x7ffc1a410cf0 (" %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0408| 0x7ffc1a410cf8 (" - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0416| 0x7ffc1a410d00 ("%p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0424| 0x7ffc1a410d08 ("- %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0432| 0x7ffc1a410d10 ("p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0440| 0x7ffc1a410d18 (" %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0448| 0x7ffc1a410d20 (" - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0456| 0x7ffc1a410d28 ("%p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0464| 0x7ffc1a410d30 ("- %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0472| 0x7ffc1a410d38 ("p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0480| 0x7ffc1a410d40 (" %p - %p - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0488| 0x7ffc1a410d48 (" - %p - %p - %p - %p - %p - %p - %p - %p - ")
+0496| 0x7ffc1a410d50 ("%p - %p - %p - %p - %p - %p - %p - ")
+0504| 0x7ffc1a410d58 ("- %p - %p - %p - %p - %p - ")
+0512| 0x7ffc1a410d60 ("p - %p - %p - %p - ")
+0520| 0x7ffc1a410d68 (" %p - %p - ")
+0528| 0x7ffc1a410d70 --> 0x202d20 (' - ')
+0536| 0x7ffc1a410d78 --> 0x4000000100 
+0544| 0x7ffc1a410d80 --> 0x0 
+0552| 0x7ffc1a410d88 --> 0x0 
+0560| 0x7ffc1a410d90 --> 0x0 
+0568| 0x7ffc1a410d98 --> 0x0 
+0576| 0x7ffc1a410da0 --> 0x0 
+0584| 0x7ffc1a410da8 --> 0x0 
+0592| 0x7ffc1a410db0 --> 0x0 
+--More--(75/100)
+0600| 0x7ffc1a410db8 --> 0x0 
+0608| 0x7ffc1a410dc0 --> 0x0 
+0616| 0x7ffc1a410dc8 --> 0x0 
+0624| 0x7ffc1a410dd0 --> 0x55e537a21040 --> 0x400000006 
+0632| 0x7ffc1a410dd8 --> 0xf0b5ff 
+0640| 0x7ffc1a410de0 --> 0xc2 
+0648| 0x7ffc1a410de8 --> 0x7ffc1a410e17 --> 0x55e537a2214000 
+0656| 0x7ffc1a410df0 --> 0x7ffc1a410e16 --> 0x55e537a221400000 
+0664| 0x7ffc1a410df8 --> 0x55e537a2245d (add    rbx,0x1)
+0672| 0x7ffc1a410e00 --> 0x7f224ab1ffc8 --> 0x0 
+0680| 0x7ffc1a410e08 --> 0x55e537a22410 (endbr64)
+0688| 0x7ffc1a410e10 --> 0x0 
+0696| 0x7ffc1a410e18 --> 0x55e537a22140 (endbr64)
+0704| 0x7ffc1a410e20 --> 0x7ffc1a410f20 --> 0x1 
+0712| 0x7ffc1a410e28 --> 0x298bf28dc4febd00 
+0720| 0x7ffc1a410e30 --> 0x0 
+0728| 0x7ffc1a410e38 --> 0x7f224a9560b3 (<__libc_start_main+243>:	mov    edi,eax)
+0736| 0x7ffc1a410e40 --> 0x7f224ab71620 --> 0x50b1600000000 
+0744| 0x7ffc1a410e48 --> 0x7ffc1a410f28 --> 0x7ffc1a412270 --> 0x4853007465702f2e ('./pet')
+0752| 0x7ffc1a410e50 --> 0x100000000 
+0760| 0x7ffc1a410e58 --> 0x55e537a2232f (endbr64)
+0768| 0x7ffc1a410e60 --> 0x55e537a22410 (endbr64)
+0776| 0x7ffc1a410e68 --> 0xb8fbc51c849e0988 
+0784| 0x7ffc1a410e70 --> 0x55e537a22140 (endbr64)
+0792| 0x7ffc1a410e78 --> 0x7ffc1a410f20 --> 0x1 
+
+
+base = 0x7f224a92f000
