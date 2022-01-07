@@ -1,0 +1,16 @@
+version: '2'
+services:
+  php:
+    build: ./php
+    ports:
+      - '1337:80'
+    volumes:
+      - ./html:/var/www/html
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: asddva8439hefe4j
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+ 

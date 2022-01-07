@@ -1,0 +1,59 @@
+- ham_in_random
+	+ 0xbf5 : srand()
+	+ 0xd4b : atoi()
+
+
+gdb-peda$ stack 50
+0000| 0x7fff25977680 --> 0x0 
+0008| 0x7fff25977688 --> 0xd17c00000000 
+0016| 0x7fff25977690 --> 0x50000 
+0024| 0x7fff25977698 --> 0x20ffffffff 
+0032| 0x7fff259776a0 ("E8rduJVI0T24yfOguOHtQ2vhjk3wudtw")
+0040| 0x7fff259776a8 ("0T24yfOguOHtQ2vhjk3wudtw")
+0048| 0x7fff259776b0 ("uOHtQ2vhjk3wudtw")
+0056| 0x7fff259776b8 ("jk3wudtw")
+0064| 0x7fff259776c0 --> 0x0 
+0072| 0x7fff259776c8 --> 0x0 
+0080| 0x7fff259776d0 --> 0x60a000000 
+0088| 0x7fff259776d8 --> 0xb72441e9740ad700 
+0096| 0x7fff259776e0 --> 0x7fff25977770 --> 0x7fff25977790 --> 0x0 
+0104| 0x7fff259776e8 --> 0x55f245800d85 (jmp    0x55f245800cfd)
+0112| 0x7fff259776f0 --> 0xd68 ('h\r')
+0120| 0x7fff259776f8 --> 0xa ('\n')
+0128| 0x7fff25977700 --> 0xd17c7f2100000003 
+0136| 0x7fff25977708 --> 0x2d42785ac32e0df8 
+0144| 0x7fff25977710 ("createaaaaaaaaaa")
+0152| 0x7fff25977718 ("aaaaaaaa")
+0160| 0x7fff25977720 --> 0x0 
+0168| 0x7fff25977728 --> 0x7f21b6a77013 (<_IO_new_file_overflow+275>:	cmp    eax,0xffffffff)
+0176| 0x7fff25977730 --> 0x14 
+0184| 0x7fff25977738 --> 0x7f21b6bcf6a0 --> 0xfbad2887 
+0192| 0x7fff25977740 --> 0x55f245800f26 ("SECRET KEY GENERATOR")
+--More--(25/50)
+0200| 0x7fff25977748 --> 0x7f21b6a6a71a (<__GI__IO_puts+378>:	cmp    eax,0xffffffff)
+0208| 0x7fff25977750 --> 0x55f245800e10 (push   r15)
+0216| 0x7fff25977758 --> 0x7fff25977790 --> 0x0 
+0224| 0x7fff25977760 --> 0x55f2458009c0 (xor    ebp,ebp)
+0232| 0x7fff25977768 --> 0xb72441e9740ad700 
+0240| 0x7fff25977770 --> 0x7fff25977790 --> 0x0 
+0248| 0x7fff25977778 --> 0x55f245800dfe (mov    eax,0x0)
+0256| 0x7fff25977780 --> 0x7fff25977888 --> 0x7fff25978251 ("./newbie")
+0264| 0x7fff25977788 --> 0x100000000 
+0272| 0x7fff25977790 --> 0x0 
+0280| 0x7fff25977798 --> 0x7f21b6a0a0b3 (<__libc_start_main+243>:	mov    edi,eax)
+0288| 0x7fff259777a0 --> 0x7f21b6c26620 --> 0x50b1600000000 
+0296| 0x7fff259777a8 --> 0x7fff25977888 --> 0x7fff25978251 ("./newbie")
+0304| 0x7fff259777b0 --> 0x100000000 
+0312| 0x7fff259777b8 --> 0x55f245800dcf (push   rbp)
+0320| 0x7fff259777c0 --> 0x55f245800e10 (push   r15)
+0328| 0x7fff259777c8 --> 0xbac373b2d652a194 
+0336| 0x7fff259777d0 --> 0x55f2458009c0 (xor    ebp,ebp)
+0344| 0x7fff259777d8 --> 0x7fff25977880 --> 0x1 
+0352| 0x7fff259777e0 --> 0x0 
+0360| 0x7fff259777e8 --> 0x0 
+0368| 0x7fff259777f0 --> 0x453d389c3912a194 
+0376| 0x7fff259777f8 --> 0x44801ef3969ca194 
+0384| 0x7fff25977800 --> 0x0 
+0392| 0x7fff25977808 --> 0x0 
+--More--(50/50)
+gdb-peda$ 

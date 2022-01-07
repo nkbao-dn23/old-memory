@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  app:
+    image: eval
+    ports:
+      - "9997:9997"
+    restart: unless-stopped

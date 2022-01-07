@@ -1,0 +1,6 @@
+notes:
+ build: ./
+ ports:
+  - "31336:9999"
+ expose:
+  - "31336"

@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sun Dec 12 07:42:37 2021
+Invocation: foremost grinch.exe 
+Output directory: /home/letscode/Desktop/xmas/rev1/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: grinch.exe
+Start: Sun Dec 12 07:42:37 2021
+Length: 39 KB (39936 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.exe 	      39 KB 	          0 	 11/05/2092 23:39:35
+1:	00000016.png 	      28 KB 	       8517 	  (839 x 235)
+Finish: Sun Dec 12 07:42:37 2021
+
+2 FILES EXTRACTED
+	
+exe:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Sun Dec 12 07:42:37 2021
